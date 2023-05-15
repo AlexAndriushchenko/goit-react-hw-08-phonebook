@@ -1,0 +1,19 @@
+.phonebook_form {
+    width: 300px;
+    padding: 20px;
+    display: block;
+    border: 1px solid #477405;
+    margin: 20px 40px;
+}
+
+.phonebook_label {
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+    margin-bottom: 20px;
+}
+
+.phonebook_btn {
+    margin: 10px 0px;
+    font-size: 16px;
+}
