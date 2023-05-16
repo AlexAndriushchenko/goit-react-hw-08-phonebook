@@ -5,7 +5,7 @@ import { selectError, selectIsLoading } from 'redux/contacts/selectors';
 import { ContactForm } from 'components/ContactForm/ContactForm ';
 import { Filter } from 'components/Filter/Filter';
 import { ContactList } from 'components/ContactList/ContactList';
-import css from 'components/App.module.css';
+import css from 'components/App/App.module.css';
 
 export default function Contacts() {
   const dispatch = useDispatch();

@@ -4,7 +4,7 @@ import { BrowserRouter } from 'react-router-dom';
 import { PersistGate } from 'redux-persist/integration/react';
 import { Provider } from 'react-redux';
 import { store, persistor } from 'redux/store';
-import { App } from 'components/App';
+import { App } from 'components/App/App';
 import 'react-toastify/dist/ReactToastify.css';
 import './index.css';
 
