@@ -1,21 +1,15 @@
-const styles = {
-  container: {
-    minHeight: 'calc(100vh - 50px)',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  title: {
-    fontWeight: 500,
-    fontSize: 48,
-    textAlign: 'center',
-  },
-};
+import { Wrap, WrapItem, Center, Heading } from '@chakra-ui/react';
 
 export default function Home() {
   return (
-    <div style={styles.container}>
-      <h1 style={styles.title}>Welcome to Phone book</h1>
-    </div>
+    <Wrap spacing="30px">
+      <WrapItem>
+        <Center w="850px">
+          <Heading as="h1" fontSize="48px" marginTop="100px">
+            Welcome to Phone book
+          </Heading>
+        </Center>
+      </WrapItem>
+    </Wrap>
   );
 }

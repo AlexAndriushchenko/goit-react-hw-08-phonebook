@@ -5,7 +5,7 @@ import { selectError, selectIsLoading } from 'redux/contacts/selectors';
 import { ContactForm } from 'components/ContactForm/ContactForm ';
 import { Filter } from 'components/Filter/Filter';
 import { ContactList } from 'components/ContactList/ContactList';
-import css from 'components/App/App.module.css';
+import { Heading } from '@chakra-ui/react';
 
 export default function Contacts() {
   const dispatch = useDispatch();
@@ -18,12 +18,13 @@ export default function Contacts() {
 
   return (
     <>
-      <h1 className={css.phonebook_header}>Phonebook</h1>
       <ContactForm />
       {isLoading && !error && <b>Request in progress...</b>}
-      <h2 className={css.contacts_header}>Contacts</h2>
+      <Heading as="h2" fontSize="30px" marginTop="20px" marginBottom="20px">
+        Contacts
+      </Heading>
       <Filter />
       <ContactList />
     </>
   );
-};
+}
